@@ -1,0 +1,15 @@
+What do you think we were trying to get you to learn with this challenge?
+
+Well, had I been able to accomplish the final piece with ERB and HTML, that certainly would have been a lot fo learning, but on top of that, we continued to practice passing class objects into other class objects in order to make a method that can utilize data across a lot of objects, and ensure that we could code some basic analytic functions into these objects.
+
+Outline in words (at least 5-6 sentences) what your code is doing in order to solve this problem.
+
+First, my code establishes a class for activities that can establish the total cost of the activity, and break down what each person who participated in this activity owes for participating.  My code then creates a reunion class that is able to hold (and add any new) activities for the reunion and then find the total balances for the people that took part in the activities.  The activity class in this instance holds the total cost for the activity by allowing the base cost and the cost per person to be set through dedicated methods, and then finds the total cost through another dedicated method, however, by using these methods to find the balance for each participant in the activity, the methods for finding the total cost to not need to be manually run as long as the cost values have been set.  By having the activities themselves return an array of the balances of the participants in a hash, the reunion class can easily iterate over the activities' balances to find a total balance for each person who took part in at least 1 activity throughout the reunion, as long as those activities have been added to the reunion.  My code has people being added into activities first and not being held in the reunion itself as the software seems to only be used to generate a final balance sheet for the activities in the reunion, but if the reunion itself also had a base cost and a cost per person, I would have probably held all people attending the reunion held in the reunion class and then may have needed to add a method to the reunion that would add a person to the activity by calling an activities add participant method.
+
+What was the most difficult portion of this for you?
+
+I know I should be able to make new hashes out of existing hashes with the right enumerable, and I wanted to use something like reduce to make a hash out of hash values but I did not know the way to do it when not starting from an array.  So my hash creation felt lazy, or as though it had to many lines, with the explicit creation of empty hashes before my enumerables.
+
+What came naturally to you?
+
+Making classes with the states and behaviors that are needed is starting to feel natural, along with knowing how to working with most data types (everything but hash creation though enumerables basically).  I was happy to feel much better about making a class that held other class objects and worked with their data, as this time last week I was just beginning to understand it.
